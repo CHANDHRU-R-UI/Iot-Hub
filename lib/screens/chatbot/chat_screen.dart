@@ -29,7 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
       ? 'https://corsproxy.io/?https://api.groq.com/openai/v1/chat/completions'
       : 'https://api.groq.com/openai/v1/chat/completions';
   final String _apiKey =
-      'YOUR_GROQ_API_KEY'; // Replace with your actual Groq API key
+      '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';
 
   void _scrollToBottom() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
