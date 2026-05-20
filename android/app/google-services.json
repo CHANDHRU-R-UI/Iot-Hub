@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "375971558683",
+    "project_id": "iot-hub-07",
+    "storage_bucket": "iot-hub-07.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375971558683:android:1085d756d5bf27b1910fbe",
+        "android_client_info": {
+          "package_name": "com.jjcet.iothub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-mpCxjfZVMrwcWhT80QwHAFjDxE6FizU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
