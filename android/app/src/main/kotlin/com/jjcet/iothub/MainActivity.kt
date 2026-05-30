@@ -1,4 +1,4 @@
-package com.jjcet.iot_mastery
+package com.jjcet.iothub
 
 import io.flutter.embedding.android.FlutterActivity
 

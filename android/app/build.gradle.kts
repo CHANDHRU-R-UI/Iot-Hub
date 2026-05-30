@@ -8,9 +8,9 @@ plugins {
 }
 
 android {
-    namespace = "com.example.iot_mastery"
+    namespace = "com.jjcet.iothub"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -22,7 +22,7 @@ android {
         applicationId = "com.jjcet.iothub"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 21
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -49,7 +49,7 @@ flutter {
 
 dependencies {
   // Import the Firebase BoM
-  implementation(platform("com.google.firebase:firebase-bom:34.13.0"))
+  implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
 
   // Add the dependencies for Firebase products you want to use
   // When using the BoM, don't specify versions in Firebase dependencies
