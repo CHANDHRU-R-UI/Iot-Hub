@@ -34,7 +34,7 @@ jobs:
 
       - name: Check Flutter Format & Lints
         run: |
-          flutter format --set-exit-if-changed lib/
+          dart format --set-exit-if-changed lib/
           flutter analyze
         continue-on-error: true
 
