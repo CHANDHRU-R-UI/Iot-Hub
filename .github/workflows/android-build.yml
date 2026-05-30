@@ -26,11 +26,21 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.29.3'
           channel: 'stable'
           cache: true
 
+      - name: Verify Flutter Installation
+        run: flutter --version
+
       - name: Install Dependencies
         run: flutter pub get
+
+      - name: Generate local.properties
+        run: |
+          echo "flutter.sdk=$(which flutter | sed 's|/bin/flutter||')" > android/local.properties
+          echo "sdk.dir=$ANDROID_SDK_ROOT" >> android/local.properties
+          cat android/local.properties
 
       - name: Check Flutter Format & Lints
         run: |
@@ -39,10 +49,10 @@ jobs:
         continue-on-error: true
 
       - name: Build Release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --no-shrink
 
       - name: Build Release App Bundle (AAB)
-        run: flutter build appbundle --release
+        run: flutter build appbundle --release --no-shrink
 
       - name: Upload Release APK Artifact
         uses: actions/upload-artifact@v4
